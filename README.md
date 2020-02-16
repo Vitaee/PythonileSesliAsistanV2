@@ -19,6 +19,7 @@ isteninel modülleri tek komutla yüklemek için:
 
 Asistanımızı çalıştırmak için:
 - python3 jarden.py 
+
 komutununu girmeniz yeterli.. soru veya önerileriniz için benimle iletişime geçebilirsiniz..
 - canilguu@gmail.com
 
