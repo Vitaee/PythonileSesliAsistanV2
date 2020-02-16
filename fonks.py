@@ -831,7 +831,7 @@ def change_bckgrnd():
 "Ubuntu_gel_by_Midge_Mantissa_Sinnaeve.jpg"] #bendeki fotoğrafların isimleri bu şekilde dilerseniz isimleri değiştirebilirsiniz.
  #mesela resim1.jpg , resim2.jpd ...
 
-    talkUS("Arkaplan görüntüsünü değiştiriyorum")
+    talkUS("Arka plan görüntüsünü değiştiriyorum")
     picture_path = "//usr//share//backgrounds//" + random.choice(lst)
     Popen("DISPLAY=:0 GSETTINGS_BACKEND=dconf /usr/bin/gsettings set org.gnome.desktop.background picture-uri file://{0}".format(picture_path), shell=True) 
     
