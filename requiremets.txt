@@ -1,0 +1,15 @@
+gTTS
+SpeechRecognition
+wikipedia
+webbrowser
+opencv-python
+pyowm
+psutil
+fbchat
+getpass 
+pygame
+pyperclip
+selenium
+google-search
+youtube-search
+pydub
