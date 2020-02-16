@@ -206,10 +206,10 @@ def open_gedit():
     p_editör = Popen("gedit")
 
 def open_tw():
-    talkUS("Hangi yayıncıyı açmalıyım")
-    tw_ans = myCommand()
-    tw_lst = ["elraen","elran","elraenn","elraeen","elran","mitrein","mithrain","mitreyin","mitrain","xantares","zantares","kendine müzisyen",
-    "jahrein","jahreyn"]
+    talkUS("Hangi yayıncıyı açmalıyım?")
+    tw_ans = input("Yayıncı adı giriniz: ")
+    tw_lst = ["elraenn","mithrain","Xantares","kendinemüzisyen",
+    "jahrein","wtcn","rammus53"]# burayı kendinize göre özelleştirebilirsiniz..
     
 
     if tw_ans in tw_lst:
@@ -285,7 +285,8 @@ def py_stp():
 
 def th_tme():
     strTime = datetime.datetime.now().strftime("%H:%M:%S")
-    talkUS(f"Efendim, şuan saat {strTime} ")
+    talkUS(f"Efendim, şuan saat {strTime} ") #dilerseniz bu fonksiyonu kaldırabilirsiniz..
+#çünkü her sesli asistan mesajının yanında anlık saat gösteriliyor.
 
 def th_dy():
     strDay = datetime.datetime.now().strftime("%B %d %A")
@@ -356,7 +357,6 @@ def yt_srch():
 
 def cpu_inf():
     print("="*20, "CPU Bilgi", "="*20) #Cpu İnfo yazısını yazdırdık soluna ve sağına 20şer tane = işareti koydum
-    #print("Physical cores:", psutil.cpu_count(logical=False))
     print("Toplam çekirdek:", psutil.cpu_count(logical=True)) #İŞlemci de bulunan çekirdek sayısı
     # CPU frequencies
     cpufreq = psutil.cpu_freq()
@@ -508,7 +508,7 @@ def gthb_lgn():
     gitpass = ""
     class Github:
         def __init__(self,gitname,gitpass):
-            driver = "/home/can/Downloads/chromedriver"
+            driver = "/home/can/Downloads/chromedriver" #chrome driver'ı indirdim ve onun konumunu tanımladım.
             self.browser = webdriver.Chrome(driver)
             self.gitname = gitname
             self.gitpass = gitpass
@@ -621,15 +621,44 @@ def twtt_lgn():
 
             talkUS("Twitter'da bir şeyler aramamı ister misiniz?")
             twtt_ans = myCommand()
+            twtt_ans2 = input("Aranacak kelime: ")
             if "evet ara" in twtt_ans or "evet isterim" in twtt_ans or "evet" in twtt_ans or "ara" in twtt_ans or "isterim" in twtt_ans:
                 talkUS("Ne aramamı istersiniz?")
-                twtt_ans2 = myCommand()
+                twtt_ans2 = input("Aranacak kelime: ") #haber gündem
+              
+                 try:
+                     searhBtn = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH, "//*[@id='react-root']/div/div/div/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div[2]/input")));
+                     searhBtn.send_keys(twtt_ans2)
+                     searhBtn.send_keys(Keys.ENTER)  
+                
+                 except:
+                     print("Arama çubuğu kullanılamadı!")
+
+                
                 try:
-                    searhBtn = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH, "//*[@id='react-root']/div/div/div/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div[2]/input")));
-                    searhBtn.send_keys(twtt_ans2)
-                    searhBtn.send_keys(Keys.ENTER)  
+                                                                                                
+                     lastNews = WebDriverWait(self.browser,10).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='react-root']/div/div/div/main/div/div/div/div[1]/div/div[1]/div[2]/nav/div[2]/div[2]/a/div/span")));
+                     lastNews.click()
                 except:
-                    print("Arama çubuğu kullanılamadı!")
+                    print("En son sekmesine tıklanılmadı!")
+        
+        
+                try:
+                    likeButton = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH,'//*[@id="react-root"]/div/div/div/main/div/div/div/div[1]/div/div[2]/div/div/section/div/div/div/div[1]/div/article/div/div[2]/div[2]/div[4]/div[3]/div')));
+                    likeButton.click()
+            
+
+               except:
+                   print("Gönderi beğenilemedi!")
+
+                try:
+                    self.browser.execute_script("window.scrollTo(0, 500)")
+            #sayfamıızın vertikal olarak aşağıya doğru yönelmesini sağlıyoruz 
+            #0 = x , y = 500 , bu değer kadar sayfayı aşağıya kadar sürüklüyor..
+
+
+                except:
+                    print("Hata")
 
             if "hayır" in twtt_ans or "istemiyorum" in twtt_ans or "hayır arama" in twtt_ans:
                 talkUS("Twitter artık sizin kontrolünüzde")
@@ -799,7 +828,8 @@ def change_bckgrnd():
     #random.choice methodu ile..
     lst = ["Beijling_park_burial_path_by_Mattias_Andersson.jpg","Ermine_lines_by_Gustavo_Brenner.png","Flight_dive_by_Nicolas_Silva.png","Frozen_sunset_on_the_lake_by_Manuel_Arslanyan.jpg",
 "Origin_of_nature_by_Julian_Tomasini.jpg","Sky_Sparkles_by_Joe_Thompson.jpg","Stargazing_by_Marcel_Kächele.jpg","warty-final-ubuntu.png",
-"Ubuntu_gel_by_Midge_Mantissa_Sinnaeve.jpg"]
+"Ubuntu_gel_by_Midge_Mantissa_Sinnaeve.jpg"] #bendeki fotoğrafların isimleri bu şekilde dilerseniz isimleri değiştirebilirsiniz.
+ #mesela resim1.jpg , resim2.jpd ...
 
     talkUS("Arkaplan görüntüsünü değiştiriyorum")
     picture_path = "//usr//share//backgrounds//" + random.choice(lst)
@@ -837,8 +867,8 @@ def paste_text():
     talkUS("Lütfen not dosyasını kontrol ediniz")
 
 def music_spotify():
-    sp_username = ""
-    sp_password = ""
+    sp_username = "" #spotify üyeliğim yok burda facebook ile giriş yapmasını sağlıyorum.
+    sp_password = "" 
     class Spotify:
         def __init__(self,username,password):
             self.sp_username = sp_username
