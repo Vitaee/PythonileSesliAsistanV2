@@ -18,7 +18,7 @@ isteninel modülleri tek komutla yüklemek için:
 - pip install -r Desktop/requirements.txt 
 
 Asistanımızı çalıştırmak için:
-python3 jarden.py 
-komutunuzu girmeniz yeterli.. soru veya önerileriniz için benimle iletişime geçebilirsiniz..
-canilguu@gmail.com
+- python3 jarden.py 
+komutununu girmeniz yeterli.. soru veya önerileriniz için benimle iletişime geçebilirsiniz..
+- canilguu@gmail.com
 
