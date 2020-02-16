@@ -413,12 +413,12 @@ def fb_msg():
     talkUS(username + random.choice(fb_ans))
 
     #username = str(input("Username: ")) #facebook kullanıcı adı = can.ilgu
-    client = fbchat.Client(username, getpass()) #şifremiz face190788
+    client = fbchat.Client(username, getpass()) #şifremiz 
     #no_of_friends = int(input("Number of friends: ")) #kaç tane arkadaşa mesaj gönderilecek?, 1
     #no_of_friends = 1
     #for i in range(no_of_friends):
     talkUS("Arkadaşınızın adını giriniz.")
-    name = str(input("Name: ")) #kişi/kişilerin ismi adı, hasan.ilgu.7
+    name = str(input("Name: ")) #kişi/kişilerin ismi adı, 
     friends = client.searchForUsers(name)  # return a list of names
     friend = friends[0] #oluşturulan listediki ilk isim
     talkUS("Lütfen mesajınızı yazınız.")
