@@ -1,0 +1,80 @@
+Kısaca komutlardan bahsedecek olursak; (bazı basit komutlar yazılmamıştır tüm komutları görmek için jarden.py dosyasına bakabilirsiniz.)
+
+
+"google" --> chrome açılır.
+
+"youtube" --> default tarayıcınızda yotube açılır.
+
+"discord" --> dicord uygulaması açılır bir sohbete girerseniz asistan sizi dinlemeyecektir.
+
+"whatsapp" --> whatsdesk uygulaması açılır.
+
+"hesap makinesi" --> ubuntu hesap makinesi açılır.
+
+"takvim" --> ubuntu takvim'i açar.
+
+"atom" --> atom kod editörü açılır.
+
+"not defteri" --> Text Editör uygulaması açılır.
+
+"twitch" --> yayıncı adı girildikten sonra default tarayıcınızda açılır.
+
+"not al" --> sizi dinleyerek not alır.
+
+"not oku" --> alınan notu okur.
+
+"notumu sil" --> txt dosyasındaki notları siler.
+
+"müzik çal" --> PC'de belirlenen konumdaki müzik klasöründen rasgele müzik açar.
+
+"müzik kes" --> Müziği durdurur.
+
+"bilgisayarımı kapat --> bilgisayarınızı 5 sn. içerisinde kapatır.
+
+"bilgisayarımı yeniden başlat" --> bilgisayarınız 5sn. içinde yeniden başlatılır.
+
+"oturumu kapat" --> açık olan oturumdan çıkılır.
+
+"haritalar" --> neresi sorusu ile karşılık verir mesela Türkiye derseniz google maps'i açarak türkiyeyi gösterir.
+
+
+"vikipedi" --> ne öğrenmek istediğinizi sorar cevabı alır ve arama yapıp çıkan sonuçta ilk 2 satırı/cümleyi okur.
+
+"araştır" --> ne araştırmak istersiniz diye bir soru sorar alınan cevabı google'da arayıp ilgili sayfayı karşınıza açar.
+
+"nasıl yapılır" --> neyin nasıl yapıldığını öğrenmek istersiniz diye bir soru sorar ardından alınan cevap ile google araması yapıp ilgili sayfayı karşınıza çıkarır.
+
+"şarkı/video aç" --> youtube ile arama yapar ve ilgili şarkı/video yu açar.
+
+"işlemci/hdd/ram" --> işlemci/hdd/ram durumu hakkında bilgi verir. yazılı olarak ekrana print edilir.
+
+"hava durumu" --> o anki belirlenen konumdaki hava durumunu sunar.(sıcaklık rüzgar hızı ve nem oranı)
+
+"uyu" --> programı kapatır.
+
+"facebook ile mesaj gönder" --> girilen kullanıcı adı ile seslenir ve şifrenizi ister ardından arkadaşınızın adını ister ve ardından göndermek istediğiniz mesajı sorar.
+
+
+"webcam" --> bilgisayarınızdaki webcam açılır ve yüzünüzü tanır ve birde "İnsan" yazısı oluşur.
+
+"facebook/github/twitter/instagram" -->otomatik olarak hesablarınıza giriş yapabilir.(öncesinde girilen kullanıcı bilgileri ile)
+
+"hız testi" --> speedtest.net sitesini açar ve hız testi yapar.
+
+
+"yemek sepeti" --> ne yemeyi istersiniz diye sorar girilen yemek adı ile arama yapar ve sepetinize ekleyip ödeme yöntemini nakit olarak seçip siparişi onaylamaınızı bekler.
+
+"google çeviri" --> bir yabancı kelime/cümle girmenizi ister girilen cümle ile google çeviriyi açarak çeviri yapar.
+
+"gmail" --> ubuntuda yüklü olan thunderbird uygulamasını açar.
+
+"arka planı değiştir" --> ayarlı olan arka planını başka bir fotoğraf ile değiştirir.
+
+"kopyala" --> kopyalamak istediğiniz kelime/cümleyi söylemenizi ister 
+
+"yapıştır" --> .txt dosyasına kopyalanan kelime/cümleyi yapıştırır.
+
+"spotify" --> spotify web sitesini açar facebook ile giriş yapıp en son çalan şarkıyı çalınmasını sağlar.
+
+
+ 
