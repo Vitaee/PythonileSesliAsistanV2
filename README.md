@@ -10,7 +10,7 @@ Yapılan değişiklikler:
 - Yemeksepeti , google çeviri, spotify ile müzik , twitter giriş yapma , arama , beğenme.. (Selenium)
 - twitch'e anında bağlanın (webbrowser)
 - mail gönderimi Thunderbird Mail uygulaması üzerinden yapılacak.
-- 3.versiyonu ile dahada gelişmiş olacak.. 
+- 3.versiyonu ile dahada gelişmiş olacak.. (Arayüz eklenmesi v.b)
 
 isteninel modülleri tek komutla yüklemek için:
 - txt dosyasını masaüstünüze bırakın.
