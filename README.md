@@ -12,7 +12,7 @@ Yapılan değişiklikler:
 - mail gönderimi Thunderbird Mail uygulaması üzerinden yapılacak.
 - 3.versiyonu ile dahada gelişmiş olacak.. (Arayüz eklenmesi v.b)
 
-isteninel modülleri tek komutla yüklemek için:
+istenilen modülleri tek komutla yüklemek için:
 - txt dosyasını masaüstünüze bırakın.
 - komut satırına;
 - pip install -r Desktop/requirements.txt 
