@@ -386,7 +386,7 @@ def ram_inf():
 
 
 def wh_temp():
-    owm = pyowm.OWM("4e88efe024c0feb268f51a015c1f8ce4")
+    owm = pyowm.OWM("API KEY")
     our_loc = owm.weather_at_place("Kyrenia, CY")
     weather = our_loc.get_weather()
 
@@ -409,7 +409,7 @@ def fb_msg():
     fb_ans = [" merhaba"," hoş geldin"," lütfen şifreni gir"," lütfen şifrenizi giriniz"," şifreniz lütfen",
     " merhaba şifrenizi girmeniz gerekiyor"]
 
-    username = "can.ilgu"
+    username = "" # kullanıcı adınız. örn. https://www.facebook.com/can.ilgu benim "can.ilgu"
     talkUS(username + random.choice(fb_ans))
 
     #username = str(input("Username: ")) #facebook kullanıcı adı = can.ilgu
@@ -473,8 +473,8 @@ def wb_cm():
     cv2.destroyAllWindows()
 
 def fb_lgn():
-    mailname = "canilgu@hotmail.com" #mail ve şifremizi yazıyoruz
-    password1 = "face190788"
+    mailname = "" #mail ve şifremizi yazıyoruz
+    password1 = ""
     class Facebook: #class ismini yazdık
         def __init__(self,mail,password): #self , mail ve password tanımladık
             self.browser = webdriver.Chrome() #chrome yazarsak chromium üzerinden devam eder..
@@ -504,8 +504,8 @@ def fb_lgn():
     facbk.singIn()
 
 def gthb_lgn():
-    gitname = "Vitaee"
-    gitpass = "can_aassff88"
+    gitname = ""
+    gitpass = ""
     class Github:
         def __init__(self,gitname,gitpass):
             driver = "/home/can/Downloads/chromedriver"
@@ -590,8 +590,8 @@ def spd_tst():
 
 
 def twtt_lgn():
-    usernm = "canilguu@gmail.com"
-    password2 = "cansoft88"
+    usernm = ""
+    password2 = ""
 
     class Twitter:
         def __init__(self, usernm, password2):
@@ -694,8 +694,8 @@ def gl_trns():
     trnsword.transWord()
 
 def fod_rder():
-    usrnm = "canilguu@gmail.com" #kullanıcı adı ve şifremizi tanımlıyoruz.
-    pswrd = "pyton190788"
+    usrnm = "" #kullanıcı adı ve şifremizi tanımlıyoruz.
+    pswrd = ""
 
     class Yemek:
         def __init__(self, usrnm, pswrd):
@@ -837,8 +837,8 @@ def paste_text():
     talkUS("Lütfen not dosyasını kontrol ediniz")
 
 def music_spotify():
-    sp_username = "canilgu@hotmail.com"
-    sp_password = "pyton190788"
+    sp_username = ""
+    sp_password = ""
     class Spotify:
         def __init__(self,username,password):
             self.sp_username = sp_username
