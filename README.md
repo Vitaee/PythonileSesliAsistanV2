@@ -1,2 +1,3 @@
-# Python-le-Sesli-Asistan-V2-
+# Python ile Sesli Asistan V2
 "elif" kod satırları kaldırıldı
+#gerekli açıkla eklenecek...
