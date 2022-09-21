@@ -13,6 +13,7 @@ Yapılan değişiklikler:
 - 3.versiyonu ile dahada gelişmiş olacak.. (Arayüz eklenmesi v.b)
 
 istenilen modülleri tek komutla yüklemek için:
+- sudo apt install ffmpeg && portaudio19
 - txt dosyasını masaüstünüze bırakın.
 - komut satırına;
 - pip install -r Desktop/requirements.txt 

@@ -626,13 +626,13 @@ def twtt_lgn():
                 talkUS("Ne aramamı istersiniz?")
                 twtt_ans2 = input("Aranacak kelime: ") #haber gündem
               
-                 try:
-                     searhBtn = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH, "//*[@id='react-root']/div/div/div/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div[2]/input")));
-                     searhBtn.send_keys(twtt_ans2)
-                     searhBtn.send_keys(Keys.ENTER)  
+                try:
+                    searhBtn = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH, "//*[@id='react-root']/div/div/div/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/div[2]/input")));
+                    searhBtn.send_keys(twtt_ans2)
+                    searhBtn.send_keys(Keys.ENTER)  
                 
-                 except:
-                     print("Arama çubuğu kullanılamadı!")
+                except:
+                    print("Arama çubuğu kullanılamadı!")
 
                 
                 try:
@@ -643,6 +643,7 @@ def twtt_lgn():
                     print("En son sekmesine tıklanılmadı!")
         
         
+                """
                 try:
                     likeButton = WebDriverWait(self.browser,10).until(EC.visibility_of_element_located((By.XPATH,'//*[@id="react-root"]/div/div/div/main/div/div/div/div[1]/div/div[2]/div/div/section/div/div/div/div[1]/div/article/div/div[2]/div[2]/div[4]/div[3]/div')));
                     likeButton.click()
@@ -653,12 +654,14 @@ def twtt_lgn():
 
                 try:
                     self.browser.execute_script("window.scrollTo(0, 500)")
+            
             #sayfamıızın vertikal olarak aşağıya doğru yönelmesini sağlıyoruz 
             #0 = x , y = 500 , bu değer kadar sayfayı aşağıya kadar sürüklüyor..
 
 
                 except:
                     print("Hata")
+                """
 
             if "hayır" in twtt_ans or "istemiyorum" in twtt_ans or "hayır arama" in twtt_ans:
                 talkUS("Twitter artık sizin kontrolünüzde")
